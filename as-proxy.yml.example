@@ -1,0 +1,16 @@
+# keep alive period: default 60s
+keepalive_period: 60
+# connect timeout: default 10s
+connect_timeout: 10
+# which accounts client used to login
+# format: user: password
+auths:
+  admin: admin123
+  test: test123
+
+# list of aerospike server and proxy
+# proxy will response proxy addr instead of aerospike server addr
+# in request get peers: peers-clear-std
+as_cluster:
+  "10.1.0.2:7000": 10.1.0.2:3000
+  "10.1.0.3:7000": 10.1.0.3:3000
